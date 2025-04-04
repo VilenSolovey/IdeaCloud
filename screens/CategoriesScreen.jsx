@@ -6,7 +6,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 export default function Categories() {
   const [newCategory, setNewCategory] = useState('');
-  const [categories, setCategories] = useState<string[]>([]);
+  const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [editCategoryName, setEditCategoryName] = useState('');
@@ -28,13 +28,13 @@ export default function Categories() {
     }
   };
 
-  const openModal = (category: string) => {
+  const openModal = () => {
     setSelectedCategory(category);
     setEditCategoryName(category);
     setIsModalVisible(true);
   };
   
-  const exitModal = (category: string) => {
+  const exitModal = () => {
     setIsModalVisible(false);
   }
 

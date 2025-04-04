@@ -17,7 +17,7 @@ import {
 
 export const NotesContext = createContext();
 
-export const NotesProvider: React.FC = ({ children }) => {
+export const NotesProvider = ({ children }) => {
     const [notes, setNotes] = useState([]);
     const [archivedNotes, setArchivedNotes] = useState([]); 
     const [categories, setCategories] = useState([]);

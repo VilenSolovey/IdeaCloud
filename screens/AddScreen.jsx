@@ -50,7 +50,7 @@ export default function Add() {
     }
   };
 
-  const handleSelectCategory = (category: string) => {
+  const handleSelectCategory = () => {
     setSelectedCategory(category);
     setmodalVisible(false);
   };
